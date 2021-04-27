@@ -331,7 +331,7 @@ d3.json('https://raw.githubusercontent.com/arixha/workshop2-Basetis/main/subset_
       .attr('id', 'tooltip')
       .style("font-family", "'Proxima Nova', sans-serif")
       .style('position', 'absolute')
-      .style('top', '8%')
+      .style('top', '75px')
       //.style('left', '40px ')
       .style('width', '230px')
       //.style('margin-left', '10px')
@@ -396,7 +396,7 @@ d3.json('https://raw.githubusercontent.com/arixha/workshop2-Basetis/main/subset_
 
     d3.zoom().on("zoom", (event) =>{ 
     node.attr("transform", event.transform),
-    link.attr("transform", event.transform)})(svg);
+    link.attr("transform", event.transform)}).scaleExtent([-8 / 2, 4])(svg);
     
     node.append("title")
         .text(d => d.labels[0]);
