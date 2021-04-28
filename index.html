@@ -8,12 +8,13 @@
   <style>    
     body {
     font-family: Proxima Nova, Helvetica, sans-serif;
+
     }
 
 
     /* Clear floats after the columns */
     .grid-container {
-      width: 100%;
+      width: 75%;
       height: 100vh;
       display: flex;
 
@@ -397,7 +398,7 @@ d3.json('https://raw.githubusercontent.com/arixha/workshop2-Basetis/main/subset_
     legend2.append("text")
         .attr("x", 30)
         .attr("y", 5)
-        .attr("font-weight", 800)
+        .attr("font-weight", 400)
         .text(d => dataDict[d])
         .style('font-size', `${10}px`);
           
@@ -415,19 +416,10 @@ d3.json('https://raw.githubusercontent.com/arixha/workshop2-Basetis/main/subset_
     })
   
   
-  
-
-  
-  
-  // utils
+  // data subsetting
   // -----
   // https://observablehq.com/@sechodosh/graph
   // https://observablehq.com/@x80110/graph
-
-  // groups
-  // https://observablehq.com/@ravengao/force-directed-graph-with-cola-grouping
-  // https://bl.ocks.org/bumbeishvili/f027f1b6664d048e894d19e54feeed42
-  // https://bl.ocks.org/GerHobbelt/3104394 <- this one is very interesting
 
 
 })
